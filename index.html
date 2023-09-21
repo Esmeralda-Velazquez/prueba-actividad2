@@ -2,6 +2,28 @@
 <html>
 <head>
     <title>Ejemplo de Tabla y Botón</title>
+    <style>
+        body {
+            background-color: #ffcccc; 
+            text-align: center;
+        }
+
+        table {
+            margin: 20px auto; 
+        }
+
+        h1 {
+            color: #333; 
+        }
+
+        button {
+            background-color: #ff9900;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <h1>Tabla de Comida de Ejemplo</h1>
@@ -36,11 +58,14 @@
 
     <br>
 
-    <button onclick="mostrarMensaje()">Haz clic en mí</button>
+    <button onclick="mostrarGatito()">Este es un gatito</button>
+    <img id="gatito" src="" alt="Gatito" style="display: none;">
     
     <script>
-        function mostrarMensaje() {
-            alert('¡Hola, mundo! Esto es un botón.');
+        function mostrarGatito() {
+            var imagenGatito = document.getElementById('gatito');
+            imagenGatito.src = 'https://w0.peakpx.com/wallpaper/786/190/HD-wallpaper-cute-cats-cats-cute-kawaii-kittens.jpg'; 
+            imagenGatito.style.display = 'block'; 
         }
     </script>
 </body>
